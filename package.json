@@ -1,5 +1,5 @@
 {
-  "name": "react-starter",
+  "name": "right-on-target",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -44,5 +44,24 @@
     "gulp-replace-quotes": "^1.0.2",
     "gulp-sass": "^5.1.0",
     "sass": "^1.56.1"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PredragBelos/right-on-target-webisite.git"
+  },
+  "keywords": [
+    "archery",
+    "project",
+    "education",
+    "school",
+    "children"
+  ],
+  "author": "Predrag Beloš <predragbelos@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PredragBelos/right-on-target-webisite/issues"
+  },
+  "homepage": "https://github.com/PredragBelos/right-on-target-webisite#readme"
 }
