@@ -1,10 +1,12 @@
 // SCSS files for basicfiles
-@import "./basicfiles/fonts/fonts.scss";
 @import "./basicfiles/reset/reset.scss";
-@import "./basicfiles/typography/typography.scss";
 @import "./basicfiles/variables/variables.scss";
 @import "./basicfiles/mixin/mixin.scss";
-@import "./basicfiles/html_components/body/body.scss";
+@import "./basicfiles/fonts/fonts.scss";
+@import "./basicfiles/typography/typography.scss";
+
+// SCSS files for HTML components
+@import "./basicfiles/html_components/html-components.scss";
 
 // SCSS files for components
 // @import "./components/Box/NewComponent.scss";

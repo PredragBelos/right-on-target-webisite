@@ -1,5 +1,4 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import '../style/css/index.css';
 
 function App() {
   return (
