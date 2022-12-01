@@ -1,0 +1,6 @@
+//-----------------------------------------------------header
+
+.header {
+    background-color: $greey-button;
+    @include flex-structure (row, flex-start, center);
+}
