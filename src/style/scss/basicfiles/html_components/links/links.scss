@@ -1,6 +1,7 @@
 //---------- links
 
 .link-header {
+    display: inline-block;
     margin: 0;
     padding: 18px 16px 18px;
     font-family: $font-default;
@@ -9,18 +10,22 @@
     text-decoration: none;
     line-height: 20px;
     color: $white;
+    border: 0;
     border-right: 1px solid $greey-dark;
     @include hover {
         cursor: pointer;
     }
     @include breakpoint("desktop") {
-        padding: 16px 18px 16px;
-        font-size: 18px;
+        padding: 16px 14px 16px;
+        font-size: 16px;
     }
     @include breakpoint("tablet") {
+        width: 100%;
         padding: 14px 16px 14px;
         font-size: 14px;
         line-height: 16px;
+        text-align: center;
+        border: 0;
     }
     @include breakpoint("phone") {
         padding: 12px 14px 12px;
@@ -37,4 +42,8 @@
     @include hover {
         background-position: bottom;
     }
+}
+
+.link-header--active {
+    background-color: $green-button;
 }

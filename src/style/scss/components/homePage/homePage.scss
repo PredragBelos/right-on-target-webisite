@@ -1,28 +1,5 @@
 //-----------------------------------------------------homePage
 
 .home {
-    height: 100vh;
-    background-color: $green-dark;
-}
-
-.home__container {
-    height: 100vh;
-    background-color: $green-middle;
-}
-
-.home__top {
-    padding: 15px 0;
-}
-
-.home__logo {
-    width: 300px;
-    @include breakpoint("desktop") {
-        width: 250px; 
-    }
-    @include breakpoint("tablet") {
-        width: 200px;
-    }
-    @include breakpoint("phone") {
-        width: 150px;
-    }
+    overflow: hidden;
 }

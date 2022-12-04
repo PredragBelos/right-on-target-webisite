@@ -86,3 +86,61 @@
 .btn-dot--active {
     background-color: $green-dot;
 }
+
+.btn-hamburger {
+    display: none;
+    width: 25px;
+    height: 18px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: transparent;
+    position: absolute;
+    right: 10px;
+    top: calc(50% - 9px);
+    @include hover {
+        cursor: pointer;
+    }
+    @include breakpoint("tablet") {
+        @include flex-structure(column, space-between, center);
+    }
+    @include breakpoint("phone") {
+        width: 22px;
+        height: 16px;
+        top: calc(50% - 8px);
+    }
+    .header__shape {
+        width: 100%;
+        height: 2px;
+        background-color: $white;
+        transition: all 0.4s;
+    }
+}
+
+.btn-hamburger--close {
+    span:nth-child(1) {
+        transform: rotate(-405deg) translate(-6px, 6px);
+        background-color: $green-button;
+    }
+
+    span:nth-child(2) {
+        display: none;
+    }
+
+    span:nth-child(3) {
+        transform: rotate(405deg) translate(-4px, -6px);
+        background-color: $green-button;
+    }
+
+    @include breakpoint("phone") {
+        span:nth-child(1) {
+            transform: rotate(-405deg) translate(-6px, 5px);
+            background-color: $green-button;
+        }
+
+        span:nth-child(3) {
+            transform: rotate(405deg) translate(-4px, -5px);
+            background-color: $green-button;
+        }
+    }
+}
