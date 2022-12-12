@@ -1,5 +1,7 @@
 import React from 'react';
+import { slider_data } from '../../js/data/sliderData';
 import { Header } from '../header/header';
+import { Slider } from '../slider/slider';
 
 export const HomePage = () => {
 
@@ -12,9 +14,11 @@ export const HomePage = () => {
     // RENDER ---------------------------------------------------------------------
     return (
         <div className='home'>
-            <div className='wrap wrap--header'>
-                <Header />
-            </div>
+            <Header />
+            <Slider
+                slider_data={slider_data}
+                slider_interval={15000}
+            />
         </div>
     )
 }

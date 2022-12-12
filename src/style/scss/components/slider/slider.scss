@@ -1,0 +1,179 @@
+//-----------------------------------------------------slider
+
+.slider {
+    background-color: $greey-background;
+}
+
+.slider__container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @include flex-structure(row, center, center);
+}
+
+.slider__box {
+    width: 820px;
+    padding: 8px;
+    background-image: url(/public/images/slider-1-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $greey-button;
+    position: relative;
+    @include flex-structure(row, flex-start, center);
+    @include breakpoint("desktop") {
+        width: 700px;
+        padding: 6px;
+    }
+    @include breakpoint("tablet+") {
+        width: 600px;
+        padding: 4px;
+    }
+    @include breakpoint("tablet") {
+        width: 500px;
+    }
+    @include breakpoint("phone+") {
+        width: 75%;
+        @include flex-structure(column, flex-start, flex-start);
+    }
+    @include breakpoint("phone") {
+        width: 90%;
+        @include flex-structure(column, flex-start, flex-start);
+    }
+}
+
+.slider__left {
+    width: 65%;
+    @include flex-structure(row, flex-start, center);
+    @include breakpoint("phone+") {
+        width: 100%;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+.slider__right {
+    width: 35%;
+    padding: 0 7px 0 15px;
+    @include breakpoint("desktop") {
+        padding: 0 8px 0 14px;
+    }
+    @include breakpoint("tablet+") {
+        padding: 0 8px 0 12px;
+    }
+    @include breakpoint("tablet") {
+        padding: 0 4px 0 8px;
+    }
+    @include breakpoint("phone+") {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+.slider__content {
+    position: relative;
+    min-height: 248px;
+    max-height: 248px;
+    text-align: center;
+    @include breakpoint("desktop") {
+        max-height: 230px;
+        min-height: 230px;
+    }
+    @include breakpoint("tablet+") {
+        max-height: 200px;
+        min-height: 200px;
+    }
+    @include breakpoint("tablet") {
+        max-height: 165px;
+        min-height: 165px;
+    }
+    @include breakpoint("phone+") {
+        max-height: 125px;
+        min-height: 125px;
+    }
+}
+
+.slider__title {
+    margin-bottom: 10%;
+    font-size: 22px;
+    font-weight: $bold;
+    line-height: 25px;
+    text-align: center;
+    color: $white;
+    @include breakpoint("desktop") {
+        font-size: 20px;
+        line-height: 23px;
+    }
+    @include breakpoint("tablet+") {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    @include breakpoint("tablet") {
+        font-size: 17px;
+        line-height: 19px;
+    }
+    @include breakpoint("phone") {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    @include breakpoint("phone+") {
+        margin-bottom: 10px;
+    }
+}
+
+.slider__text {
+    max-height: 95px;
+    min-height: 95px;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: $regular;
+    line-height: 16px;
+    color: $green-font;
+    overflow: hidden;
+    @include breakpoint("desktop") {
+        max-height: 105px;
+        min-height: 105px;
+        font-size: 13px;
+        line-height: 15px;
+    }
+    @include breakpoint("tablet+") {
+        max-height: 70px;
+        min-height: 70px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    @include breakpoint("tablet") {
+        max-height: 38px;
+        min-height: 38px;
+        font-size: 11px;
+        line-height: 13px;
+    }
+    @include breakpoint("phone+") {
+        margin-bottom: 20px;
+    }
+}
+
+.slider__btn {
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 25.66px);
+    @include breakpoint("desktop") {
+        left: calc(50% - 20px);
+    }
+    @include breakpoint("phone+") {
+        left: calc(50% - 19px);
+    }
+    @include breakpoint("phone") {
+        left: calc(50% - 15px);
+    }
+}
+
+.proba {
+    height: 800px;
+    background-color: $green-dark;
+    h1 {
+        text-align: center;
+        color: $green-font;
+    }
+}

@@ -2,6 +2,9 @@
 
 .header {
     background-color: $greey-button;
+}
+
+.header__container {
     position: relative;
     @include flex-structure(row, flex-start, center);
 }
@@ -25,6 +28,7 @@
 
 .header__center {
     transition: right 1s ease;
+    z-index: 1;
     @include breakpoint("tablet") {
         position: absolute;
         top: 45px;
