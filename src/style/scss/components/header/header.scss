@@ -1,11 +1,8 @@
 //-----------------------------------------------------header
 
-.header {
-    background-color: $greey-button;
-}
-
 .header__container {
     position: relative;
+    background-color: $greey-button;
     @include flex-structure(row, flex-start, center);
 }
 

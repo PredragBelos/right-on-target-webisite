@@ -10,3 +10,20 @@
 .wrap--header {
     padding: 0;
 }
+
+.container-section {
+    padding: 20px;
+    @include breakpoint("desktop") {
+        padding: 15px;
+    }
+    @include breakpoint("tablet") {
+        padding: 10px;
+    }
+    @include breakpoint("phone") {
+        padding: 10px 5px;
+    }
+}
+
+.container-text {
+    padding: 10px;
+}

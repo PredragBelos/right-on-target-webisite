@@ -1,22 +1,15 @@
 //-----------------------------------------------------slider
 
-.slider {
-    background-color: $greey-background;
-}
-
 .slider__container {
     padding-top: 40px;
     padding-bottom: 40px;
+    background-color: $greey-background;
     @include flex-structure(row, center, center);
 }
 
 .slider__box {
     width: 820px;
     padding: 8px;
-    background-image: url(/public/images/slider-1-bg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     background-color: $greey-button;
     position: relative;
     @include flex-structure(row, flex-start, center);

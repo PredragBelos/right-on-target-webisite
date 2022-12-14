@@ -9,7 +9,7 @@
     line-height: 18px;
     color: $green-font;
     outline: none;
-    background-color: $green-middle;
+    // background-color: $green-middle;
     border: 0;
     @include breakpoint("desktop") {
         padding: 6px 8px 6px;

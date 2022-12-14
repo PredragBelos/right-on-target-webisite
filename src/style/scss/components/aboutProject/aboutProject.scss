@@ -1,0 +1,72 @@
+//-----------------------------------------------------AboutProject
+
+.abproj__container {
+    background-color: $greey-button;
+}
+
+.abproj__heading {
+    text-align: center;
+    color: $green-font;
+}
+
+.abproj__content {
+    @include flex-structure(row, space-between, stretch);
+    @include breakpoint("tablet") {
+        margin-top: 20px;
+    }
+}
+
+.abproj__left {
+    width: 60%;
+    @include breakpoint("tablet+") {
+        width: 65%;
+    }
+    @include breakpoint("tablet") {
+        width: 100%;
+    }
+}
+
+.abproj__right {
+    width: 40%;
+    padding-top: 90px;
+    @include flex-structure(row, center, flex-start);
+    @include breakpoint("desktop") {
+        padding-top: 75px;
+    }
+    @include breakpoint("tablet+") {
+        width: 35%;
+    }
+    @include breakpoint("tablet") {
+        display: none;
+    }
+}
+
+.abproj__img {
+    width: 280px;
+    border: 4px solid $green-button;
+    @include breakpoint("desktop") {
+        width: 250px;
+    }
+    @include breakpoint("tablet+") {
+        width: 200px;
+        border-width: 2px;
+    }
+}
+
+.abproj__title {
+    color: $green-font;
+}
+
+.abproj__title--name {
+    margin-left: 10px;
+    color: $green-font;
+}
+
+.abproj__title--white {
+    color: $white;
+}
+
+.abproj__text {
+    color: $white;
+    text-align: justify;
+}
