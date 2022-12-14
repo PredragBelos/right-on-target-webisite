@@ -12,15 +12,15 @@
 }
 
 .container-section {
-    padding: 20px;
+    padding: 30px;
     @include breakpoint("desktop") {
-        padding: 15px;
+        padding: 25px;
     }
     @include breakpoint("tablet") {
-        padding: 10px;
+        padding: 20px;
     }
     @include breakpoint("phone") {
-        padding: 10px 5px;
+        padding: 15px 5px;
     }
 }
 

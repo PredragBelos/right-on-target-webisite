@@ -1,6 +1,7 @@
 import React from 'react';
 import { slider_data } from '../../js/data/sliderData';
 import { AboutProject } from '../aboutProject/aboutProject';
+import { Goals } from '../goals/goals';
 import { Header } from '../header/header';
 import { Slider } from '../slider/slider';
 
@@ -21,6 +22,7 @@ export const HomePage = () => {
                 slider_interval={15000}
             />
             <AboutProject />
+            <Goals />
         </div>
     )
 }

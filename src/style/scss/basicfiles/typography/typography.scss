@@ -26,22 +26,22 @@ h1,
 
 h2,
 .h2 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-size: 35px;
     font-weight: $bold;
     line-height: 38px;
     @include breakpoint("desktop") {
-        margin-bottom: 15px;
+        margin-bottom: 25px;
         font-size: 30px;
         line-height: 33px;
     }
     @include breakpoint("tablet") {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         font-size: 25px;
         line-height: 28px;
     }
     @include breakpoint("phone") {
-        margin-bottom: 8px;
+        margin-bottom: 15px;
         font-size: 20px;
         line-height: 23px;
     }
