@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { slider_data } from '../../js/data/sliderData';
 import { AboutProject } from '../aboutProject/aboutProject';
 import { Goals } from '../goals/goals';
 import { Header } from '../header/header';
+import { Results } from '../results/results';
 import { Slider } from '../slider/slider';
 
 export const HomePage = () => {
@@ -10,6 +11,11 @@ export const HomePage = () => {
     // STATE ----------------------------------------------------------------------
 
     // LIFECICLE ------------------------------------------------------------------
+
+    // Scrool on top of page after refresh page
+    useEffect(() => {
+        window.history.scrollRestoration = 'manual'
+    }, []);
 
     // FUNCTIONS ------------------------------------------------------------------ 
 
@@ -23,6 +29,7 @@ export const HomePage = () => {
             />
             <AboutProject />
             <Goals />
+            <Results />
         </div>
     )
 }

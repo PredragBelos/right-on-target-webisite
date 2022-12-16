@@ -21,11 +21,11 @@ export const Goals = () => {
                         Proširenje liste sportova u okviru školskih aktivnosti u kojima se deca mogu pronaći i istaći,
                     </li>
                     <li className='goals__item'>
-                        Pružanje mogućnosti da se deca oprobaju u jednom novom i zanimljivom sportu koji nije Uključivanjen
+                        Pružanje mogućnosti da se deca oprobaju u jednom novom i zanimljivom sportu koji nije uključen
                         u drugim školama u opštini Kikinda i šire,
                     </li>
                     <li className='goals__item'>
-                        Stvaranje mogućnosti da se pojedina deca pronaću u streličarstvu koje mogu izabrati i dalje se
+                        Stvaranje mogućnosti da se pojedina deca pronađu u streličarstvu koje mogu izabrati i dalje se
                         profesionalno usavršavati,
                     </li>
                     <li className='goals__item'>
