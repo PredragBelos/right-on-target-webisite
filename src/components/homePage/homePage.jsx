@@ -3,6 +3,7 @@ import { slider_data } from '../../js/data/sliderData';
 import { AboutProject } from '../aboutProject/aboutProject';
 import { Goals } from '../goals/goals';
 import { Header } from '../header/header';
+import { Partners } from '../partners/partners';
 import { Results } from '../results/results';
 import { Slider } from '../slider/slider';
 
@@ -30,6 +31,7 @@ export const HomePage = () => {
             <AboutProject />
             <Goals />
             <Results />
+            <Partners />
         </div>
     )
 }

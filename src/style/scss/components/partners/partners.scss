@@ -1,0 +1,59 @@
+//-----------------------------------------------------partners
+
+.partners__container {
+    background-color: $greey-background;
+}
+
+.partners__heading {
+    text-align: center;
+    color: $greey-font;
+}
+
+.partners__box {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+    flex-wrap: wrap;
+    @include flex-structure(row, center, scratch);
+    @include breakpoint ("desktop") {
+        padding-top: 40px;
+    }
+    @include breakpoint ("tablet+") {
+        padding-top: 30px;
+    }
+    @include breakpoint ("tablet") {
+        padding-top: 20px;
+    }
+    @include breakpoint ("phone") {
+        padding-top: 0;
+    }
+}
+
+.partners__card {
+    width: 25%;
+    padding-bottom: 30px;
+    @include flex-structure(row, center, center);
+    @include breakpoint ("tablet+") {
+        width: 33%;
+    }
+    @include breakpoint ("tablet") {
+        width: 50%;
+    }
+    @include breakpoint ("phone") {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+}
+
+.partners__img {
+    width: 70%;
+    @include breakpoint ("tablet") {
+        width: 60%;
+    }
+    @include breakpoint ("phone+") {
+        width: 75%;
+    }
+    @include breakpoint ("phone") {
+        width: 50%;
+    }
+}
