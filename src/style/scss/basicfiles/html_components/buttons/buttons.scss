@@ -1,0 +1,158 @@
+//---------- buttons
+
+.btn {
+    margin: 0;
+    padding: 8px 10px 8px;
+    font-family: $font-default;
+    font-size: 16px;
+    font-weight: $regular;
+    line-height: 18px;
+    color: $white;
+    background-color: $greey-button;
+    border: 0;
+    @include hover {
+        cursor: pointer;
+    }
+    @include breakpoint("desktop") {
+        padding: 6px 8px 6px;
+        font-size: 15px;
+    }
+    @include breakpoint("tablet") {
+        padding: 4px 6px 4px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    @include breakpoint("phone") {
+        padding: 3px 5px 3px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+}
+
+.btn--bg-green {
+    background-color: $green-button;
+}
+
+.btn--bg-white {
+    background-color: $white;
+}
+
+.btn--txt-green {
+    color: $green-font;
+}
+
+.btn--txt-greey {
+    color: $greey-font;
+}
+
+.btn--bg-green-tr {
+    transition: 0.3s ease all;
+    background: linear-gradient((to top, $green-button 50%, $greey-button 50%));
+    background-size: 100% 200%;
+    background-position: top;
+    @include hover {
+        background-position: bottom;
+    }
+}
+
+.btn--bg-green-ex {
+    transition: 0.3s ease all;
+    @include hover {
+        background-color: $green-button;
+    }
+}
+
+.btn--slider {
+    background-color: $green-button;
+    @include hover {
+        padding: 7px 9px 7px;
+        background-color: transparent;
+        border: 1px solid $green-button;
+        @include breakpoint("desktop") {
+            padding: 5px 7px 5px;
+        }
+    }
+}
+
+.btn-dot {
+    margin: 10px 4px;
+    padding: 0;
+    width: 12px;
+    height: 12px;
+    border: 0;
+    border-radius: 50%;
+    background-color: $white20;
+    @include breakpoint("desktop") {
+        width: 10px;
+        height: 10px;
+    }
+    @include breakpoint("tablet") {
+        width: 8px;
+        height: 8px;
+    }
+    @include breakpoint("phone") {
+        width: 6px;
+        height: 6px;
+    }
+}
+
+.btn-dot--active {
+    background-color: $green-dot;
+}
+
+.btn-hamburger {
+    display: none;
+    width: 25px;
+    height: 18px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: transparent;
+    position: absolute;
+    right: 10px;
+    top: calc(50% - 9px);
+    @include hover {
+        cursor: pointer;
+    }
+    @include breakpoint("tablet") {
+        @include flex-structure(column, space-between, center);
+    }
+    @include breakpoint("phone") {
+        width: 22px;
+        height: 16px;
+        top: calc(50% - 8px);
+    }
+    .header__shape {
+        width: 100%;
+        border: 1px solid $white;
+        transition: all 0.4s;
+    }
+}
+
+.btn-hamburger--close {
+    span:nth-child(1) {
+        transform: rotate(-405deg) translate(-6px, 6px);
+        border: 1px solid $green-button;
+    }
+
+    span:nth-child(2) {
+        display: none;
+    }
+
+    span:nth-child(3) {
+        transform: rotate(405deg) translate(0px, 0px);
+        border: 1px solid $green-button;
+    }
+
+    @include breakpoint("phone") {
+        span:nth-child(1) {
+            transform: rotate(-405deg) translate(-6px, 5px);
+            border: 1px solid $green-button;
+        }
+
+        span:nth-child(3) {
+            transform: rotate(405deg) translate(0px, 0px);
+            border: 1px solid $green-button;
+        }
+    }
+}

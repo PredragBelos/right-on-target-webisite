@@ -1,0 +1,19 @@
+//-----------------------------------------------------footer
+
+.footer__container {
+    padding: 17px 0;
+    background-color: $greey-button;
+    text-align: center;
+    color: $green-font;
+    @include breakpoint("desktop") {
+       font-size: 15px; 
+    }
+    @include breakpoint("tablet") {
+        padding: 14px 0;
+        font-size: 14px;
+    }
+    @include breakpoint("phone") {
+        padding: 12.5px 0;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,49 @@
+//---------- links
+
+.link-header {
+    display: inline-block;
+    margin: 0;
+    padding: 18px 16px 18px;
+    font-family: $font-default;
+    font-size: 18px;
+    font-weight: $bold;
+    text-decoration: none;
+    line-height: 20px;
+    color: $white;
+    border: 0;
+    border-right: 1px solid $greey-dark;
+    @include hover {
+        cursor: pointer;
+    }
+    @include breakpoint("desktop") {
+        padding: 16px 14px 16px;
+        font-size: 16px;
+    }
+    @include breakpoint("tablet") {
+        width: 100%;
+        padding: 14px 16px 14px;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        border: 0;
+    }
+    @include breakpoint("phone") {
+        padding: 12px 14px 12px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+
+.link-header--bg-green-tr {
+    transition: 0.3s ease all;
+    background: linear-gradient((to top, $green-button 50%, $greey-button 50%));
+    background-size: 100% 200%;
+    background-position: top;
+    @include hover {
+        background-position: bottom;
+    }
+}
+
+.link-header--active {
+    background-color: $green-button;
+}

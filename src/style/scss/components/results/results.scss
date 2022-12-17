@@ -1,0 +1,104 @@
+//-----------------------------------------------------results
+
+.results__container {
+    background-color: $greey-button;
+}
+
+.results__heading {
+    text-align: center;
+    color: $green-font;
+}
+
+.results__counters {
+    width: 60%;
+    margin: 50px auto;
+    flex-wrap: wrap;
+    @include flex-structure(row, space-between, flex-start);
+    @include breakpoint("desktop") {
+        margin: 40px auto;
+    }
+    @include breakpoint("tablet+") {
+        margin: 20px auto;
+    }
+    @include breakpoint("tablet") {
+        width: 80%;
+    }
+    @include breakpoint("phone+") {
+        margin-bottom: 0;
+        justify-content: center;
+    }
+}
+
+.results__block {
+    text-align: center;
+    @include breakpoint("tablet") {
+        width: 25%;
+    }
+    @include breakpoint("phone+") {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+.results__circle {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px auto;
+    border: 2px solid $green-button;
+    border-radius: 75px;
+    background-color: $green-button-20;
+    @include flex-structure(row, center, center);
+    @include breakpoint("desktop") {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 15px;
+    }
+    @include breakpoint("tablet+") {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 12px;
+    }
+    @include breakpoint("tablet") {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 12px;
+    }
+    @include breakpoint("phone") {
+        width: 70px;
+        height: 70px;
+    }
+    span {
+        font-size: 20px;
+        color: $white;
+        @include breakpoint("desktop") {
+            font-size: 18px;
+        }
+        @include breakpoint("tablet+") {
+            font-size: 16px;
+        }
+        @include breakpoint("tablet") {
+            font-size: 15px;
+        }
+        @include breakpoint("phone") {
+            font-size: 12px;
+        }
+    }
+}
+
+.results__text {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: $white;
+    @include breakpoint("desktop") {
+        font-size: 18px;
+    }
+    @include breakpoint("tablet+") {
+        font-size: 16px;
+    }
+    @include breakpoint("tablet") {
+        font-size: 15px;
+    }
+    @include breakpoint("phone") {
+        font-size: 12px;
+    }
+}

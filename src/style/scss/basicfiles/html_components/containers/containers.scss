@@ -1,0 +1,29 @@
+//---------- containers
+
+.wrap {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.wrap--header {
+    padding: 0;
+}
+
+.container-section {
+    padding: 30px;
+    @include breakpoint("desktop") {
+        padding: 25px;
+    }
+    @include breakpoint("tablet") {
+        padding: 20px;
+    }
+    @include breakpoint("phone") {
+        padding: 15px 5px;
+    }
+}
+
+.container-text {
+    padding: 10px;
+}

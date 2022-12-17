@@ -1,0 +1,65 @@
+//-----------------------------------------------------header
+
+.header__container {
+    position: relative;
+    background-color: $greey-button;
+    @include flex-structure(row, flex-start, center);
+}
+
+.header__logo {
+    height: 56px;
+    margin: 0 30px 0 10px;
+    @include flex-structure(row, center, center);
+    @include breakpoint("desktop") {
+        height: 52px;
+        margin: 0 20px 0 10px;
+    }
+    @include breakpoint("tablet") {
+        height: 45px;
+        margin: 0 0 0 10px;
+    }
+    @include breakpoint("phone") {
+        height: 40px;
+    }
+}
+
+.header__center {
+    transition: right 1s ease;
+    z-index: 1;
+    @include breakpoint("tablet") {
+        position: absolute;
+        top: 45px;
+        right: 0;
+        background-color: $greey-button;
+    }
+    @include breakpoint("phone") {
+        top: 40px;
+    }
+}
+
+.header__center--hide {
+    @include breakpoint("tablet") {
+        right: -130px;
+    }
+    @include breakpoint("phone") {
+        right: -100px;
+    }
+}
+
+.header__list {
+    @include flex-structure(row, flex-start, flex-start);
+    @include breakpoint("tablet") {
+        width: 130px;
+        flex-direction: column;
+    }
+    @include breakpoint("phone") {
+        width: 100px;
+        flex-direction: column;
+    }
+}
+
+.header__item {
+    @include breakpoint("tablet") {
+        width: 100%;
+    }
+}

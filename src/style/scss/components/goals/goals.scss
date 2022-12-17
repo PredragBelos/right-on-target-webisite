@@ -1,0 +1,43 @@
+//-----------------------------------------------------goals
+
+.goals__container {
+    background-color: $greey-background;
+}
+
+.goals__heading {
+    text-align: center;
+    color: $greey-button;
+}
+
+.goals__item {
+    margin-bottom: 8px;
+    padding: 2px 0 8px 35px;
+    background-image: url(/public/images/goals-li.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: left top;
+    font-size: 18px;
+    line-height: 22px;
+    color: $greey-button;
+    @include breakpoint("desktop") {
+        margin-bottom: 6px;
+        padding: 2px 0 8px 33px;
+        font-size: 16px;
+        line-height: 20px;
+        background-size: 23px;
+    }
+    @include breakpoint("tablet") {
+        margin-bottom: 4px;
+        padding: 0 0 8px 28px;
+        font-size: 14px;
+        line-height: 18px;
+        background-size: 20px;
+    }
+    @include breakpoint("phone") {
+        margin-bottom: 2px;
+        padding: 0 0 8px 25px;
+        font-size: 12px;
+        line-height: 16px;
+        background-size: 18px;
+    }
+}
