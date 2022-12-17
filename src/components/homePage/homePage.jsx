@@ -6,6 +6,7 @@ import { Header } from '../header/header';
 import { Partners } from '../partners/partners';
 import { Results } from '../results/results';
 import { Slider } from '../slider/slider';
+import { Foоter } from '../footer/footer';
 
 export const HomePage = () => {
 
@@ -32,6 +33,7 @@ export const HomePage = () => {
             <Goals />
             <Results />
             <Partners />
+            <Foоter />
         </div>
     )
 }
