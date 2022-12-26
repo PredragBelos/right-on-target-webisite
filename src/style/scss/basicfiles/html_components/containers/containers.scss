@@ -27,3 +27,16 @@
 .container-text {
     padding: 10px;
 }
+
+.page-view {
+    min-height: calc(100vh - 56px - 56px);
+    @include breakpoint("desktop") {
+        min-height: calc(100vh - 52px - 52px);
+    }
+    @include breakpoint("tablet") {
+        min-height: calc(100vh - 45px - 62px);
+    }
+    @include breakpoint("phone") {
+        min-height: calc(100vh - 45px - 52px);
+    }
+}
