@@ -1,0 +1,105 @@
+//-----------------------------------------------------teamCard
+
+.team__cards {
+    padding-top: 50px;
+    @include breakpoint("phone+") {
+        padding-top: 30px;  
+    }
+}
+
+.team__cards-box {
+    flex-wrap: wrap;
+    @include flex-structure(row, center, flex-start);
+    @include breakpoint("phone+") {
+        @include flex-structure(column, flex-start, center);
+    }
+}
+
+.team-card {
+    width: 180px;
+    margin: 0 50px 30px 50px;
+    @include breakpoint("desktop") {
+        width: 160px;
+        margin: 0 40px 30px 40px;
+    }
+    @include breakpoint("tablet") {
+        width: 140px;
+        margin: 0 15px 20px 15px;
+    }
+    @include breakpoint("phone+") {
+        margin: 0 0 20px 0;
+    }
+    @include breakpoint("phone") {
+        width: 120px;
+    }
+}
+
+.team-card__top {
+    padding-top: 20px;
+    border: 1px solid $greey-button;
+    border-bottom: 0;
+    background-color: $greey-button-10;
+    @include flex-structure(row, center, stretch);
+    @include breakpoint("desktop") {
+        padding-top: 15px;
+    }
+    @include breakpoint("tablet") {
+        padding-top: 12px;
+    }
+    @include breakpoint("phone") {
+        padding-top: 10px;
+    }
+    picture {
+        @include flex-structure(row, center, flex-end);
+    }
+}
+
+.team-card__img {
+    width: 100%;
+}
+
+.team-card__bottom {
+    padding: 10px 5px;
+    background-color: $greey-button;
+    @include breakpoint("tablet") {
+        padding: 8px 4px;
+    }
+    @include breakpoint("phone") {
+        padding: 5px 4px;
+    }
+}
+
+.team-card__name {
+    margin: 0;
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    color: $green-font;
+    @include breakpoint("desktop") {
+        font-size: 16px;
+    }
+    @include breakpoint("tablet") {
+        font-size: 14px;
+    }
+    @include breakpoint("phone") {
+        font-size: 12px;
+    }
+    
+}
+
+.team-card__position {
+    margin: 0;
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    color: $white;
+    @include breakpoint("desktop") {
+        font-size: 14px;
+    }
+    @include breakpoint("tablet") {
+        font-size: 12px;
+    }
+    @include breakpoint("phone") {
+        font-size: 10px;
+    }
+}
