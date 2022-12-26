@@ -2,11 +2,11 @@ import React, { useEffect } from 'react';
 import { slider_data } from '../../js/data/sliderData';
 import { AboutProject } from '../aboutProject/aboutProject';
 import { Goals } from '../goals/goals';
-import { Header } from '../header/header';
+import { Header } from '../header/Header';
 import { Partners } from '../partners/partners';
 import { Results } from '../results/results';
 import { Slider } from '../slider/slider';
-import { Foоter } from '../footer/footer';
+import { Footer } from '../footer/footer';
 
 export const HomePage = () => {
 
@@ -33,7 +33,7 @@ export const HomePage = () => {
             <Goals />
             <Results />
             <Partners />
-            <Foоter />
+            <Footer />
         </div>
     )
 }

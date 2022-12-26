@@ -1,0 +1,42 @@
+//-----------------------------------------------------team
+
+.team {
+    overflow: hidden;
+}
+
+.team__container {
+    background-color: $greey-background;
+}
+
+.team__heading {
+    text-align: center;
+    color: $greey-font;
+}
+
+.team__text {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: $greey-font;
+    @include breakpoint("desktop") {
+        font-size: 18px;
+        line-height: 21px;
+    }
+    @include breakpoint("tablet+") {
+        width: 90%;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    @include breakpoint("phone+") {
+        width: 95%;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    @include breakpoint("phone") {
+        width: 100%;
+        font-size: 12px;
+        line-height: 15px;
+    }
+}
