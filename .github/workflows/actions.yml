@@ -23,6 +23,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:
-        server: ${{ secrets.ftp_server }}
+        server: https://predragbelos.rs
         username: ${{ secrets.ftp_name }}
         password: ${{ secrets.ftp_password }}
+        server-dir: /production.predragbelos.rs
