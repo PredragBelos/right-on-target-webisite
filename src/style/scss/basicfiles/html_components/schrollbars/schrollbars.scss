@@ -1,0 +1,47 @@
+//---------- schrollbars
+
+.schroollbar-1 {
+    &::-webkit-scrollbar {
+        width: 7px;
+        @include breakpoint("desktop") {
+            width: 6px;
+        }
+        @include breakpoint("tablet") {
+            width: 4px;
+        }
+        @include breakpoint("phone") {
+            width: 3px;
+        }
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $green;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $greey;
+    }
+}
+
+.schroollbar-2 {
+    &::-webkit-scrollbar {
+        width: 10px;
+        @include breakpoint("desktop") {
+            width: 8px;
+        }
+        @include breakpoint("tablet") {
+            width: 6px;
+        }
+        @include breakpoint("phone") {
+            width: 4px;
+        }
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $greey;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $green;
+    }
+}

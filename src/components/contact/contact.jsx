@@ -1,14 +1,44 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import { Header } from '../header/Header';
 import { Footer } from '../footer/footer';
+import emailjs from '@emailjs/browser';
+import { EmailPopup } from '../emailPopup/emailPopup';
 
 export const Contact = () => {
-
+    const form = useRef();
     // STATE ----------------------------------------------------------------------
+    const [popup_vis, set_popup_vis] = useState('hide');
+    const [popup_txt, set_popup_txt] = useState('');
 
     // LIFECICLE ------------------------------------------------------------------
 
-    // FUNCTIONS ------------------------------------------------------------------ 
+    // FUNCTIONS ------------------------------------------------------------------
+
+    /* Function for sending email to project mail address */
+    const sendEmail = (e) => {
+        e.preventDefault();
+        set_popup_vis('');
+        set_popup_txt('Poruka se šalje...');
+
+        emailjs.sendForm('service_jbh89sc', 'template_06731n8', form.current, 'ZXJBguFhcKcPEUkWp')
+            .then((result) => {
+                if (result.text === 'OK') {
+                    set_popup_txt('Poruka je poslata');
+                    cleanInputs();
+                }
+            }, (error) => { set_popup_txt('Greška pri slanju poruke'); });
+    };
+
+    /* Callback function for setting popup visibility */
+    const setPopupVisibilityCf = (popup_vis) => {
+        set_popup_vis(popup_vis);
+    }
+
+    /* Function for cleneng inputs */
+    const cleanInputs = () => {
+        let inputs = document.querySelectorAll('.cleen_input');
+        inputs.forEach(input => { input.value = '' })
+    }
 
     // RENDER ---------------------------------------------------------------------
     return (
@@ -25,17 +55,22 @@ export const Contact = () => {
                 </div>
                 <div className='contact__left-bottom'>
                     <h4 className='contact__title'>Za sva pitanja popunite našu kontakt formu</h4>
-                    <form className='form contact__form'>
+                    <form className='form contact__form' ref={form} onSubmit={sendEmail}>
                         <label className='label-1 contact__label' htmlFor='contact-name' >Ime i prezime</label>
-                        <input className='input-1 contact__input' type='text' id='contact-name' autoComplete='off' />
+                        <input className='input-1 contact__input cleen_input' type='text' name='user_name' id='contact-name' autoComplete='off' required />
                         <label className='label-1 contact__label' htmlFor='contact-email'>E-mail</label>
-                        <input className='input-1 contact__input' type='email' id='contact-email' autoComplete='off' />
+                        <input className='input-1 contact__input cleen_input' type='email' name='user_email' id='contact-email' autoComplete='off' required />
                         <label className='label-1 contact__label' htmlFor='contact-text'>Tekst poruke</label>
-                        <textarea className='textarea-1 contact__textarea' id='contact-text' spellCheck='false'></textarea>
+                        <textarea className='textarea-1 schroollbar-1 contact__textarea cleen_input' name='message' id='contact-text' spellCheck='false' required></textarea>
                         <input className='btn btn--form-1 contact__submit' type='submit' value='Pošalji' />
                     </form>
                 </div>
             </div>
+            <EmailPopup
+                visibility={popup_vis}
+                setVisibility={setPopupVisibilityCf}
+                text={popup_txt}
+            />
             <Footer />
         </section>
     )

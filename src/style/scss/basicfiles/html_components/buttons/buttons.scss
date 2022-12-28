@@ -41,6 +41,12 @@
     color: $green-font;
 }
 
+.btn--txt-green-hover {
+    @include hover {
+        color: $green-font;
+    }
+}
+
 .btn--txt-greey {
     color: $greey-font;
 }
