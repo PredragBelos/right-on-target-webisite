@@ -1,0 +1,98 @@
+//-----------------------------------------------------newsCard
+
+.news-card {
+    width: 28%;
+    margin: 0 2.66% 44px;
+    @include breakpoint("laptop") {
+        width: 30%; 
+        margin: 0 1.66% 30px;
+    }
+    @include breakpoint("tablet+") {
+        width: 32%; 
+        margin: 0 0.66% 10px;
+    }
+    @include breakpoint("tablet") {
+        width: 42%; 
+        margin: 0 4% 20px;
+    }
+    @include breakpoint("phone+") {
+        width: 60%; 
+        margin: 0 20% 20px;
+    }
+    @include breakpoint("phone") {
+        width: 70%; 
+        margin: 0 15% 20px;
+    }
+}
+
+.news-card__top {
+    width: 100%;
+    position: relative;
+
+    picture {
+        display: block;
+        @include flex-structure(row, center, flex-end);
+    }
+}
+
+.news-card__img {
+    width: 100%;
+}
+
+.news-card__date {
+    padding: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $green-background;
+    @include breakpoint("tablet") {
+        padding: 3px;
+    }
+    z-index: 1;
+
+    span {
+        font-size: 14px;
+        font-weight: $bold;
+        line-height: 0;
+        color: $greey-font;
+        @include breakpoint("desktop") {
+            font-size: 13px;
+        }
+        @include breakpoint("tablet") {
+            font-size: 12px;
+        }
+        @include breakpoint("phone") {
+            font-size: 11px;
+        }
+    }
+}
+
+.news-card__bottom {
+    min-height: 54px;
+    max-height: 54px;
+    padding: 8px 10px;
+    background-color: $greey;
+    overflow: hidden;
+    @include flex-structure(row, center, center);
+}
+
+.news-card__link {
+    font-size: 15px;
+    font-weight: $bold;
+    line-height: 19px;
+    text-decoration: none;
+    text-align: center;
+    color: $green-font;
+    @include breakpoint("laptop") {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    @include breakpoint("tablet+") {
+        font-size: 13px;
+        line-height: 16px;
+    }
+    @include breakpoint("tablet") {
+        font-size: 12px;
+        line-height: 15px;
+    }
+}

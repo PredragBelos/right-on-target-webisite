@@ -1,0 +1,28 @@
+//-----------------------------------------------------news
+
+.news {
+    overflow: hidden;
+}
+
+.news__container {
+    background-color: $greey-background;
+}
+.news__heading {
+    text-align: center;
+    color: $greey-font;
+}
+
+.news__cards {
+    padding-top: 30px;
+    flex-wrap: wrap;
+    @include flex-structure(row, flex-start, flex-start);
+    @include breakpoint("desktop") {
+        padding-top: 20px;
+    }
+    @include breakpoint("tablet") {
+        padding: 20px 20px 0 20px;
+    }
+    @include breakpoint("phone+") {
+        padding: 10px 20px 0 20px;
+    }
+}
