@@ -5,12 +5,12 @@ import { news_arr } from '../../js/data/news';
 import { NewsCard } from '../newsCard/newsCard';
 
 export const News = () => {
-    let sorted_news = news_arr.sort((a, b) => {return b.news_id - a.news_id});
-    
+    let sorted_news = news_arr.sort((a, b) => { return b.news_id - a.news_id });
+
     // STATE ----------------------------------------------------------------------
 
     // LIFECICLE ------------------------------------------------------------------
-    
+
     // FUNCTIONS ------------------------------------------------------------------ 
 
     // RENDER ---------------------------------------------------------------------

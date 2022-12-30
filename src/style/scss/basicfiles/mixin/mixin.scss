@@ -37,6 +37,13 @@
     }
 }
 
+// Special media creen
+@mixin breakpoint-spec($min-width, $max-width) {
+    @media only screen and (min-width: $min-width) and (max-width: $max-width) {
+        @content;
+    }
+}
+
 // Hover style
 @mixin hover {
     @media only screen and (min-width: 1024px) {

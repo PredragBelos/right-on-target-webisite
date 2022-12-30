@@ -20,7 +20,10 @@
         padding-top: 20px;
     }
     @include breakpoint("tablet") {
-        padding: 20px 20px 0 20px;
+        padding: 10px 25px 0 25px;
+    }
+    @include breakpoint-spec(655px, 768px) {
+        padding: 10px 70px 0 70px;
     }
     @include breakpoint("phone+") {
         padding: 10px 0 0 0;
