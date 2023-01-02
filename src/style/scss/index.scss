@@ -9,6 +9,7 @@
 @import "./basicfiles/html_components/html-components.scss";
 
 // SCSS files for components
+@import "./components/emailPopup/emailPopup.scss";
 @import "./components/homePage/homePage.scss";
 @import "./components/header/header.scss";
 @import "./components/footer/footer.scss";
@@ -20,3 +21,9 @@
 @import "./components/partners/partners.scss";
 @import "./components/team/team.scss";
 @import "./components/teamCard/teamCard.scss";
+@import "./components/contact/contact.scss";
+@import "./components/news/news.scss";
+@import "./components/newsCard/newsCard.scss";
+
+// Visibility files
+@import "./basicfiles/visibility/visibility.scss";

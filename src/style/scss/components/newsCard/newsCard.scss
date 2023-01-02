@@ -1,0 +1,83 @@
+//-----------------------------------------------------newsCard
+
+.news-card {
+    width: 33.33%;
+    margin-bottom: 30px;
+    @include breakpoint("tablet") {
+        width: 50%;
+    }
+    @include breakpoint("phone+") {
+        width: 100%;
+    }
+}
+
+.news-card-box {
+    width: 350px;
+    margin: 0 auto;
+    @include breakpoint("desktop") {
+        width: 300px;
+    }
+    @include breakpoint("tablet+") {
+        width: 230px;
+    }
+    @include breakpoint("tablet") {
+        width: 230px;
+    }
+    @include breakpoint("phone") {
+        width: 100%;
+        max-width: 230px;
+    }
+}
+
+.news-card__top {
+    position: relative;
+    picture {
+        display: block;
+        @include flex-structure(row, center, flex-end);
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.news-card__date {
+    padding: 2px 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $green-background;
+    font-size: 14px;
+    line-height: 14px;
+    color: $greey-font;
+    @include breakpoint("tablet") {
+        font-size: 13px;
+        line-height: 13px;
+    }
+    @include breakpoint("phone+") {
+        font-size: 12px;
+        line-height: 12px;
+    }
+}
+
+.news-card__bottom {
+    min-height: 54px;
+    max-height: 54px;
+    padding: 5px 10px;
+    background-color: $greey;
+    @include flex-structure(row, center, center);
+    a {
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        text-decoration: none;
+        color: $green-font;
+        @include breakpoint("desktop") {
+            font-size: 14px;
+            line-height: 17px;
+        }
+        @include breakpoint("tablet+") {
+            font-size: 13px;
+            line-height: 16px;
+        }
+    }
+}

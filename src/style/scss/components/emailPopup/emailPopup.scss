@@ -1,0 +1,25 @@
+//-----------------------------------------------------emailPopup
+
+.email-pop {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $black-40;
+    z-index: 1;
+    @include flex-structure(row, center, center);
+}
+
+.email-popup__box {
+    min-width: 250px;
+    padding: 10px;
+    background-color: $green-background;
+    border: 1px solid $greey;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.email-popup__text {
+    display: block;
+}
