@@ -1,3 +1,74 @@
 //-----------------------------------------------------news__1
 
+.news-1 {
+    overflow: hidden;
+}
 
+.news-1__container {
+    background-color: $greey-background;
+}
+
+.news-1__heading {
+    text-align: center;
+    color: $greey-font;
+}
+
+.news-1__content {
+    padding-top: 30px;
+    @include flex-structure(row, space-between, flex-start);
+    @include breakpoint("tablet") {
+        padding-top: 15px;
+        @include flex-structure(column-reverse, space-between, flex-start);
+    }
+}
+
+.news-1__left {
+    width: 40%;
+    padding-left: 50px;
+    @include breakpoint("desktop") {
+        padding-left: 40px;
+    }
+    @include breakpoint("tablet+") {
+        padding-left: 0;
+    }
+    @include breakpoint("tablet") {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+.news-1__text {
+    text-align: justify;
+}
+
+.news-1__right {
+    width: 60%;
+    padding-right: 50px;
+    text-align: right;
+    @include breakpoint("desktop") {
+        padding-right: 40px;
+    }
+    @include breakpoint("tablet+") {
+        padding-right: 0;
+    }
+    @include breakpoint("tablet") {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.news-1__img {
+    width: 550px;
+    @include breakpoint("desktop") {
+        width: 420px;
+    }
+    @include breakpoint("tablet+") {
+        width: 400px;
+    }
+    @include breakpoint("phone+") {
+        width: 350px;
+    }
+    @include breakpoint("phone") {
+        width: 290px;
+    }
+}

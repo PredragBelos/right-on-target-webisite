@@ -3,6 +3,7 @@ import { Blog } from './blog/blog';
 import { Contact } from './contact/contact';
 import { HomePage } from './homePage/homePage';
 import { News } from './news/news';
+import { News1 } from './newsComponent/News/news_1';
 import { Team } from './team/team';
 
 function App() {
@@ -16,6 +17,10 @@ function App() {
           <Route path='/contact' element={<Contact />} />
           <Route path='/news' element={<News />} />
           <Route path='/blog' element={<Blog />} />
+          {
+            // Route for news componets
+            <Route path='/news/:news_id' element={<News1 />} />
+          }
         </Routes>
       </BrowserRouter>
     </div>
