@@ -15,6 +15,11 @@ export const Team = () => {
 
     // LIFECICLE ------------------------------------------------------------------
 
+    // Scrool on top of page after refresh page
+    useEffect(() => {
+        window.history.scrollRestoration = 'manual'
+    }, []);
+
     // FUNCTIONS ------------------------------------------------------------------ 
 
     // RENDER ---------------------------------------------------------------------
@@ -28,7 +33,7 @@ export const Team = () => {
                     i koji je zaslužan sa sve postignute rezultate. Uvek su spremni da porazgovaraju i odgovore
                     na sva pitanja vezana za projekat i aktivnosti koje se realizuju u okviru projekta.
                 </p>
-                <TeamCards 
+                <TeamCards
                     team={team}
                 />
             </section>

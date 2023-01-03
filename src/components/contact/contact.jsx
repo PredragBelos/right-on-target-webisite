@@ -12,6 +12,11 @@ export const Contact = () => {
 
     // LIFECICLE ------------------------------------------------------------------
 
+    // Scrool on top of page after refresh page
+    useEffect(() => {
+        window.history.scrollRestoration = 'manual'
+    }, []);
+
     // FUNCTIONS ------------------------------------------------------------------
 
     /* Function for sending email to project mail address */

@@ -8,6 +8,11 @@ export const Blog = () => {
 
     // LIFECICLE ------------------------------------------------------------------
 
+    // Scrool on top of page after refresh page
+    useEffect(() => {
+        window.history.scrollRestoration = 'manual'
+    }, []);
+    
     // FUNCTIONS ------------------------------------------------------------------ 
 
     // RENDER ---------------------------------------------------------------------
