@@ -3,4 +3,8 @@ Comands for create files are:
 npx generate-react-cli component Box
 npx generate-react-cli component Box --type=scss
 
+2. For creating new news component
+npx generate-react-cli component News --type=news
+npx generate-react-cli component News --type=news-scss
+
 2. Import scss file to index.scss
