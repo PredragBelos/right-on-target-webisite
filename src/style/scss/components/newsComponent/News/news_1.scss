@@ -1,4 +1,4 @@
-//-----------------------------------------------------news__1
+//-----------------------------------------------------news_1
 
 .news-1 {
     overflow: hidden;
@@ -15,16 +15,17 @@
 
 .news-1__content {
     padding-top: 30px;
-    @include flex-structure(row, space-between, flex-start);
+    @include flex-structure(row, center, flex-start);
     @include breakpoint("tablet") {
         padding-top: 15px;
+    }
+    @include breakpoint("phone+") {
         @include flex-structure(column-reverse, space-between, flex-start);
     }
 }
 
 .news-1__left {
     width: 40%;
-    padding-left: 50px;
     @include breakpoint("desktop") {
         padding-left: 40px;
     }
@@ -33,7 +34,12 @@
     }
     @include breakpoint("tablet") {
         width: 100%;
+    }
+    @include breakpoint("phone+") {
         margin-top: 20px;
+    }
+    @include breakpoint("phone") {
+        padding: 0 10px 0 10px;
     }
 }
 
@@ -42,8 +48,7 @@
 }
 
 .news-1__right {
-    width: 60%;
-    padding-right: 50px;
+    margin-left: 100px;
     text-align: right;
     @include breakpoint("desktop") {
         padding-right: 40px;
@@ -53,22 +58,26 @@
     }
     @include breakpoint("tablet") {
         width: 100%;
+        margin-left: 0;
         text-align: center;
     }
 }
 
 .news-1__img {
-    width: 550px;
+    width: 250px;
     @include breakpoint("desktop") {
-        width: 420px;
+        width: 220px;
     }
     @include breakpoint("tablet+") {
-        width: 400px;
+        width: 250px;
+    }
+    @include breakpoint("tablet") {
+        width: 220px;
     }
     @include breakpoint("phone+") {
-        width: 350px;
-    }
-    @include breakpoint("phone") {
         width: 290px;
+    }
+    @include breakpoint("phone+") {
+        width: 250px;
     }
 }
