@@ -27,7 +27,7 @@ export const Team = () => {
         <div className='team'>
             <Header />
             <section className='wrap container-section page-view team__container'>
-                <h1 className='team__heading'>Naš tim</h1>
+                <h1 className='heading-section team__heading'>Naš tim</h1>
                 <p className='team__text'>
                     Naš tim koji vredno radi na svim aktivnostima koje doprinose realizaciji definisanih ciljeva
                     i koji je zaslužan sa sve postignute rezultate. Uvek su spremni da porazgovaraju i odgovore

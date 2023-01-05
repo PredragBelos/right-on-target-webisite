@@ -8,11 +8,6 @@
     background-color: $greey-background;
 }
 
-.news-1__heading {
-    text-align: center;
-    color: $greey-font;
-}
-
 .news-1__content {
     padding-top: 30px;
     @include flex-structure(row, center, flex-start);
@@ -37,9 +32,6 @@
     }
     @include breakpoint("phone+") {
         margin-top: 20px;
-    }
-    @include breakpoint("phone") {
-        padding: 0 10px 0 10px;
     }
 }
 

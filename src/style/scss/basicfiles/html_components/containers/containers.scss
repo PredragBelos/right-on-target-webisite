@@ -40,3 +40,16 @@
         min-height: calc(100vh - 45px - 52px);
     }
 }
+
+.container-news-content {
+    padding-top: 30px;
+    @include breakpoint ("tablet") {
+        padding-top: 20px;
+    }
+    @include breakpoint ("phone+") {
+        padding-top: 10px;
+    }
+    @include breakpoint ("phone") {
+        padding: 10px 10px 0 10px;
+    }
+}

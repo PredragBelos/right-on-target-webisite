@@ -1,6 +1,6 @@
 import React from 'react';
-import { Header } from '../../header/Header';
-import { Footer } from '../../footer/footer';
+import { Header } from '../header/Header';
+import { Footer } from '../footer/footer';
 
 export const News1 = () => {
 
@@ -15,8 +15,8 @@ export const News1 = () => {
         <section className='news-1'>
             <Header />
             <div className='wrap container-section page-view news-1__container'>
-                <h1 className='news-1__heading'>Početak rada sekcije</h1>
-                <div className='news-1__content'>
+                <h1 className='heading-section news-1__heading'>Početak rada sekcije</h1>
+                <div className='container-news-content news-1__content'>
                     <div className='news-1__left'>
                         <p className='news-1__text'>
                             Početkom školske 2021/22 godine sekcija streličarstva u okviru projekta

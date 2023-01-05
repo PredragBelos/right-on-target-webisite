@@ -23,7 +23,7 @@ export const News = () => {
         <section className='news'>
             <Header />
             <div className='wrap container-section page-view news__container'>
-                <h1 className='news__heading'>Vesti</h1>
+                <h1 className='heading-section news__heading'>Vesti</h1>
                 <div className='news__cards'>
                     {
                         sorted_news.map(news => {
