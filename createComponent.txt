@@ -5,6 +5,6 @@ npx generate-react-cli component Box --type=scss
 
 2. For creating new news component
 npx generate-react-cli component --type=news
-npx generate-react-cli component news new --type=news-scss
+npx generate-react-cli component new --type=news-scss
 
 2. Import scss file to index.scss
