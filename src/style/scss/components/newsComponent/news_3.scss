@@ -1,0 +1,34 @@
+//-----------------------------------------------------NewComponent
+
+.news-3__container {
+    background-color: $greey-background;
+}
+
+.news-3__picture {
+    width: 650px;
+    margin: 0 0 50px 50px;
+    float: right;
+    @include breakpoint ("desktop") {
+        width: 600px;
+        margin: 0 0 40px 40px;
+    }
+    @include breakpoint ("tablet+") {
+        width: 500px;
+        margin: 0 0 30px 30px;
+    }
+    @include breakpoint ("tablet") {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+    @include breakpoint ("phone") {
+        margin-bottom: 10px;
+    }
+}
+
+.news-3__img {
+    width: 100%;
+}
+
+.news-3__text {
+    text-align: justify;
+}
