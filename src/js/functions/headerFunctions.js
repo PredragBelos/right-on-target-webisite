@@ -4,8 +4,15 @@
 export const setActiveHeaderLink = (links) => {
     const active_page = window.location.pathname;
 
+    // Function for checking news details pages
+    const isNewsDetailsPage = (active_page) => {
+        const news_details_page = active_page.slice(0, 5);
+
+        if (news_details_page === '/news') { return news_details_page } else { return active_page };
+    }
+
     links.forEach(link => {
-        if (link.href.includes(active_page)) {
+        if (link.href.includes(active_page) || link.href.includes(isNewsDetailsPage(active_page))) {
             link.classList.remove('link-header--bg-green-tr');
             link.classList.add('link-header--active');
         }

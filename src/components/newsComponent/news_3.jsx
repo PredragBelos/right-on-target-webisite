@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Header } from '../header/Header';
 import { Footer } from '../footer/footer';
 
@@ -7,6 +7,11 @@ export const News3 = () => {
     // STATE ----------------------------------------------------------------------
 
     // LIFECICLE ------------------------------------------------------------------
+
+    // Scrool on top of page after refresh page
+    useEffect(() => {
+        window.history.scrollRestoration = 'manual'
+    }, []);
 
     // FUNCTIONS ------------------------------------------------------------------ 
 
