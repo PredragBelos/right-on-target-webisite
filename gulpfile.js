@@ -3,6 +3,7 @@ const sass = require('gulp-sass')(require('sass'));
 const autoprefixer = require('gulp-autoprefixer');
 const clean_css = require('gulp-clean-css');
 const replaceQuotes = require('gulp-replace-quotes');
+const imagemin = require('gulp-imagemin');
 
 // Function for create css from scss
 gulp.task('scss-compiler', function () {
@@ -22,6 +23,13 @@ gulp.task('replace-quotes', function () {
             quote: 'single'
         }))
         .pipe(gulp.dest('src/components'))
+});
+
+// Function for compresing images
+gulp.task('image-min', function () {
+    return gulp.src('public/images/**')
+    .pipe(imagemin())
+    .pipe(gulp.dest('public/images'))
 });
 
 // Function for watching a changes
