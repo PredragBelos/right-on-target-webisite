@@ -6,9 +6,9 @@ import { TeamCards } from '../teamCards/teamCards';
 export const Team = () => {
     // VARIABLES
     let team = [
-        { name: 'Kristijana Kukić', position: 'Koordinator projekta', img: '/images/avatar-1.jpg' },
-        { name: 'Dara Beloš', position: 'Pomoćni trener', img: '/images/avatar-1.jpg' },
-        { name: 'Predrag Beloš', position: 'Asistent', img: '/images/avatar-2.jpg' },
+        { name: 'Kristijana Kukić', position: 'Koordinator projekta', img: {large:'/images/team-3.png' ,medium:'/images/team-3-2.png', small:'/images/team-3-3.png'}},
+        { name: 'Dara Beloš', position: 'Pomoćni trener', img: {large:'/images/team-2.png' ,medium:'/images/team-2-2.png', small:'/images/team-2-3.png'} },
+        { name: 'Predrag Beloš', position: 'Asistent', img: {large:'/images/team-1.png' ,medium:'/images/team-1-2.png', small:'/images/team-1-3.png'} },
     ]
 
     // STATE ----------------------------------------------------------------------
