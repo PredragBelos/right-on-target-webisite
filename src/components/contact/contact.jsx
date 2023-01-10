@@ -1,8 +1,9 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { Header } from '../header/Header';
 import { Footer } from '../footer/footer';
 import emailjs from '@emailjs/browser';
 import { EmailPopup } from '../emailPopup/emailPopup';
+import { Helmet } from 'react-helmet';
 
 export const Contact = () => {
     const form = useRef();
@@ -11,6 +12,11 @@ export const Contact = () => {
     const [popup_txt, set_popup_txt] = useState('');
 
     // LIFECICLE ------------------------------------------------------------------
+
+    // Scrool on top of page after refresh page
+    useEffect(() => {
+        window.history.scrollRestoration = 'manual'
+    }, []);
 
     // FUNCTIONS ------------------------------------------------------------------
 
@@ -42,7 +48,15 @@ export const Contact = () => {
 
     // RENDER ---------------------------------------------------------------------
     return (
-        <section className='contact'>
+        <main className='contact'>
+            <Helmet>
+                <title>Pravo u metu | kontakt</title>
+                <meta name='description' content='Kontakt forma za slanje elektronskih poruka timu na projektu Pravo u metu.'></meta>
+                <meta property='og:title' content='Pravo u metu | kontakt' />
+                <meta property='og:type' content='website' />
+                <meta property='og:description' content='Kontakt forma za slanje elektronskih poruka timu na projektu Pravo u metu.' />
+                <link rel='canonical' href='https://pravoumetu.rs'></link>
+            </Helmet>
             <Header />
             <div className='wrap container-section page-view contact__container'>
                 <div className='contact__left-top'>
@@ -72,6 +86,6 @@ export const Contact = () => {
                 text={popup_txt}
             />
             <Footer />
-        </section>
+        </main>
     )
 }

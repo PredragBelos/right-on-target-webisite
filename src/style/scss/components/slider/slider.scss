@@ -151,6 +151,7 @@
     position: absolute;
     bottom: 0;
     left: calc(50% - 25.66px);
+    text-decoration: none;
     @include breakpoint("desktop") {
         left: calc(50% - 20px);
     }
@@ -159,14 +160,5 @@
     }
     @include breakpoint("phone") {
         left: calc(50% - 15px);
-    }
-}
-
-.proba {
-    height: 800px;
-    background-color: $green-dark;
-    h1 {
-        text-align: center;
-        color: $green-font;
     }
 }

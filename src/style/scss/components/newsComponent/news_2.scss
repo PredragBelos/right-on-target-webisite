@@ -1,0 +1,35 @@
+//-----------------------------------------------------news_2
+
+.news-2 {
+    overflow: hidden;
+}
+
+.news-2__container {
+    background-color: $greey-background;
+}
+
+.news-1__picture {
+    width: 480px;
+    margin: 0 0 15px 30px;
+    float:right ;
+    @include flex-structure(row, center, flex-start);
+    @include breakpoint ("desktop") {
+        width: 400px;
+    }
+    @include breakpoint ("tablet") {
+        width: 350px;
+        margin: 0 0 10px 20px;
+    }
+    @include breakpoint ("phone+") {
+        width: 80%;
+        margin: 0 10% 10px 10%;
+    }
+    @include breakpoint ("phone") {
+        width: 90%;
+        margin: 0 5% 10px 5%;
+    }
+}
+
+.news-2__img {
+    width: 100%;
+}

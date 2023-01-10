@@ -15,9 +15,6 @@
     @include breakpoint("phone+") {
         padding-left: 20px;
     }
-    @include breakpoint("phone") {
-        padding-left: 5px;
-    }
 }
 
 .contact__left-top {

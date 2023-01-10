@@ -38,8 +38,8 @@ export const AboutProject = () => {
                                 da upotrebljavaju opremu koja odgovara njihovim sposobnostima.
                             </p>
                             <p className='abproj__text'>
-                                Na kraju školske godine održano je takmičenje na kome su učenici mogli da pokažu šta su naučili tokom
-                                obuke koje je propraćeno dodelom diploma i medalja. Na kraju prve faze projekta učenici su bili zadovoljni,
+                                Na kraju školske godine održava se takmičenje na kome učenici moglu da pokažu šta su naučili tokom
+                                obuke koje je propraćeno dodelom diploma i medalja. Na kraju dosadašnjih faza projekta učenici su bili zadovoljni,
                                 jer su stekli jedno novo iskustvo i proveli kvalitetno vreme vežbajući i družeći se sa svojim drugovima i drugaricama
                                 iz škole.
                             </p>
@@ -47,7 +47,7 @@ export const AboutProject = () => {
                     </div>
                     <picture className='abproj__right'>
                         <source media='(max-width:992px)' srcSet='/images/abproject-2.jpg'></source>
-                        <img src='/images/abproject-1.jpg' alt='Project writer' className='abproj__img' />
+                        <img src='/images/abproject-1.jpg' alt='Dete sa lukom i strelom' className='abproj__img' />
                     </picture>
                 </div>
             </div>

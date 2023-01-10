@@ -10,6 +10,7 @@
 
 // SCSS files for components
 @import "./components/emailPopup/emailPopup.scss";
+@import "./components/newsCard/newsCard.scss";
 @import "./components/homePage/homePage.scss";
 @import "./components/header/header.scss";
 @import "./components/footer/footer.scss";
@@ -23,7 +24,13 @@
 @import "./components/teamCard/teamCard.scss";
 @import "./components/contact/contact.scss";
 @import "./components/news/news.scss";
-@import "./components/newsCard/newsCard.scss";
+@import "./components/blog/blog.scss";
+
+// SCSS files for news details components
+@import "./components/newsComponent/news_1.scss";
+@import "./components/newsComponent/news_2.scss";
+@import "./components/newsComponent/news_3.scss";
+@import "./components/newsComponent/news_4.scss";
 
 // Visibility files
 @import "./basicfiles/visibility/visibility.scss";

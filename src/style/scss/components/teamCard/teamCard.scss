@@ -35,20 +35,10 @@
 }
 
 .team-card__top {
-    padding-top: 20px;
     border: 1px solid $greey-button;
     border-bottom: 0;
-    background-color: $greey-button-10;
+    background-color: $white;
     @include flex-structure(row, center, stretch);
-    @include breakpoint("desktop") {
-        padding-top: 15px;
-    }
-    @include breakpoint("tablet") {
-        padding-top: 12px;
-    }
-    @include breakpoint("phone") {
-        padding-top: 10px;
-    }
     picture {
         @include flex-structure(row, center, flex-end);
     }

@@ -136,7 +136,8 @@
     }
     .header__shape {
         width: 100%;
-        border: 1px solid $white;
+        min-height: 2px;
+        background-color: $white;
         transition: all 0.4s;
     }
 }
@@ -144,7 +145,7 @@
 .btn-hamburger--close {
     span:nth-child(1) {
         transform: rotate(-405deg) translate(-6px, 6px);
-        border: 1px solid $green-button;
+        background-color: $green-button;
     }
 
     span:nth-child(2) {
@@ -153,18 +154,16 @@
 
     span:nth-child(3) {
         transform: rotate(405deg) translate(0px, 0px);
-        border: 1px solid $green-button;
+        background-color: $green-button;
     }
 
     @include breakpoint("phone") {
         span:nth-child(1) {
             transform: rotate(-405deg) translate(-6px, 5px);
-            border: 1px solid $green-button;
         }
 
         span:nth-child(3) {
             transform: rotate(405deg) translate(0px, 0px);
-            border: 1px solid $green-button;
         }
     }
 }

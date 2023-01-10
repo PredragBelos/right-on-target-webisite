@@ -14,8 +14,28 @@
         "component": "src/component_templates/NewComponent.jsx"
       }
     },
+    "news": {
+      "path": "src/components/newsComponent",
+      "withStyle": false,
+      "withTest": false,
+      "withStory": false,
+      "withLazy": false,
+      "customTemplates": {
+        "component": "src/component_templates/NewsComponent.jsx"
+      }
+    },
     "scss": {
       "path": "src/style/scss/components",
+      "withStyle": false,
+      "withTest": false,
+      "withStory": false,
+      "withLazy": false,
+      "customTemplates": {
+        "component": "src/component_templates/NewComponent.scss"
+      }
+    },
+    "news-scss": {
+      "path": "src/style/scss/components/newsComponent",
       "withStyle": false,
       "withTest": false,
       "withStory": false,

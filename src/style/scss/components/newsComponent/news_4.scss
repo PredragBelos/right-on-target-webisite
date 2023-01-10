@@ -1,0 +1,33 @@
+//-----------------------------------------------------news_4
+
+.news-4__container {
+    background-color: $greey-background;
+}
+
+.news-4__picture {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.news-4__img {
+    width: 70%;
+    @include breakpoint ("tablet+") {
+        width: 80%;
+    }
+    @include breakpoint ("phone") {
+        width: 100%;
+    }
+}
+
+.news-4__text {
+    width: 70%;
+    margin: 0 auto 10px;
+    text-align: center;
+    @include breakpoint ("tablet+") {
+        width: 80%;
+    }
+    @include breakpoint ("phone") {
+        width: 100%;
+    }
+}

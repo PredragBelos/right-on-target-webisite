@@ -12,22 +12,22 @@ export const NewsCard = ({ news_id, title, date, image }) => {
 
     // RENDER ---------------------------------------------------------------------
     return (
-        <div className='news-card'>
+        <article className='news-card'>
             <div className='news-card-box'>
                 <div className='news-card__top'>
-                    <div className='news-card__date'>
+                    <time className='news-card__date' dateTime={date}>
                         {date}
-                    </div>
+                    </time>
                     <picture>
                         <source media='(max-width:576px)' srcSet={`${image.small}`} />
                         <source media='(max-width:768px)' srcSet={`${image.medium}`} />
-                        <img src={`${image.large}`} alt='' className='news-card__img' />
+                        <img src={`${image.large}`} alt='Slika koja prezentuje vest' className='news-card__img' />
                     </picture>
                 </div>
                 <div className='news-card__bottom'>
                     <Link to={`/news/${news_id}`} className='news-card__link'>{setTitle(title)}</Link>
                 </div>
             </div>
-        </div >
+        </article >
     )
 }
