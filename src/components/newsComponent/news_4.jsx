@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Header } from '../header/Header';
 import { Footer } from '../footer/footer';
+import { Helmet } from 'react-helmet';
 
 export const News4 = () => {
 
@@ -17,7 +18,15 @@ export const News4 = () => {
 
     // RENDER ---------------------------------------------------------------------
     return (
-        <section className='news-4 overflov-hide'>
+        <main className='news-4 overflov-hide'>
+            <Helmet>
+                <title>Pravo u metu ponovo deo školskih aktivnosti</title>
+                <meta name='description' content='Streličarstvo će i tokom školske 2022/23 godine biti deo školskih aktivnosti osnovne škole Đura jakšić Kikinda.'></meta>
+                <meta property='og:title' content='Pravo u metu ponovo deo školskih aktivnosti' />
+                <meta property='og:type' content='website' />
+                <meta property='og:description' content='Streličarstvo će i tokom školske 2022/23 godine biti deo školskih aktivnosti osnovne škole Đura jakšić Kikinda.' />
+                <link rel='canonical' href='https://pravoumetu.rs'></link>
+            </Helmet>
             <Header />
             <div className='wrap container-section page-view news-4__container'>
                 <h1 className='heading-section news-4__heading'>Streličarstvo ponovo deo školskih aktivnosti</h1>
@@ -25,7 +34,7 @@ export const News4 = () => {
                     <picture className='news-4__picture'>
                         <source media='(max-width:576px)' srcSet='/images/newsDetails/news_det_4_3.jpg' />
                         <source media='(max-width:768px)' srcSet='/images/newsDetails/news_det_4_2.jpg' />
-                        <img className='news-4__img' src='/images/newsDetails/news_det_4_1.jpg' alt='Takmičenje na kraju godine pobednici' />
+                        <img className='news-4__img' src='/images/newsDetails/news_det_4_1.jpg' alt='Pravo u metu plakat 2022/23' />
                     </picture>
                     <p className='news-4__text'>
                         Streličarstvo će i tokom školske 2022/23 godine biti deo školskih aktivnosti osnovne škole Đura jakšić Kikinda. 
@@ -38,6 +47,6 @@ export const News4 = () => {
                 </div>
             </div>
             <Footer />
-        </section>
+        </main>
     )
 }

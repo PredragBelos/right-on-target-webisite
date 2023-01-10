@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Header } from '../header/Header';
 import { Footer } from '../footer/footer';
+import { Helmet } from 'react-helmet';
 
 export const News3 = () => {
 
@@ -17,7 +18,15 @@ export const News3 = () => {
 
     // RENDER ---------------------------------------------------------------------
     return (
-        <section className='news-3 overflov-hide'>
+        <main className='news-3 overflov-hide'>
+            <Helmet>
+                <title>Pravo u metu takmičenje u školi Đura Jakšić Kikinda</title>
+                <meta name='description' content='Na kraju školske 2021/22 godine održano je takmičenje koje predstavlja jednu od aktivnosti definisanu projektom Pravo u metu. U takmičenju su učestvovali svi učenici koji su pohađali sekciju streličarstva tokom ove školske godine.'></meta>
+                <meta property='og:title' content='Pravo u metu takmičenje u školi Đura Jakšić Kikinda' />
+                <meta property='og:type' content='website' />
+                <meta property='og:description' content='Na kraju školske 2021/22 godine održano je takmičenje koje predstavlja jednu od aktivnosti definisanu projektom Pravo u metu. U takmičenju su učestvovali svi učenici koji su pohađali sekciju streličarstva tokom ove školske godine.' />
+                <link rel='canonical' href='https://pravoumetu.rs'></link>
+            </Helmet>
             <Header />
             <div className='wrap container-section page-view news-3__container'>
                 <h1 className='heading-section news-3__heading'>Održano takmičenje na kraju školske godine</h1>
@@ -60,6 +69,6 @@ export const News3 = () => {
                 </div>
             </div>
             <Footer />
-        </section>
+        </main>
     )
 }

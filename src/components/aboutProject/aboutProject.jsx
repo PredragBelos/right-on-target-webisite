@@ -47,7 +47,7 @@ export const AboutProject = () => {
                     </div>
                     <picture className='abproj__right'>
                         <source media='(max-width:992px)' srcSet='/images/abproject-2.jpg'></source>
-                        <img src='/images/abproject-1.jpg' alt='Project writer' className='abproj__img' />
+                        <img src='/images/abproject-1.jpg' alt='Dete sa lukom i strelom' className='abproj__img' />
                     </picture>
                 </div>
             </div>
