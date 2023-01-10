@@ -32,15 +32,15 @@ export const Slider = ({ slider_data, slider_interval }) => {
         <section className='slider'>
             <div className='wrap slider__container'>
                 <div className='slider__box'>
-                    <div className='slider__left'>
-                        <img src={slider_img} alt='Archery' id='slider-img' />
-                    </div>
+                    <picture className='slider__left'>
+                        <img src={slider_img} alt={slider_title} id='slider-img' />
+                    </picture>
                     <div className='slider__right'>
-                        <div className='slider__content'>
+                        <article className='slider__content'>
                             <h4 className='slider__title' id='slider-title'>{slider_title}</h4>
                             <p className='slider__text' id='slider-text'>{slider_text}</p>
                             <Link className='btn btn--slider slider__btn' to={`/news/${slider_link}`}>Više</Link>
-                        </div>
+                        </article>
                     </div>
                 </div>
             </div>

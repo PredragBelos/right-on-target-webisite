@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Header } from '../header/Header';
 import { Footer } from '../footer/footer';
+import { Helmet } from 'react-helmet';
 
 export const News2 = () => {
 
@@ -17,7 +18,15 @@ export const News2 = () => {
 
     // RENDER ---------------------------------------------------------------------
     return (
-        <section className='news-2'>
+        <main className='news-2'>
+            <Helmet>
+                <title>Nabavljena oprema za projekat Pravo u metu</title>
+                <meta name='description' content='Na osnovu projekta koji je finansirala Pokrajinska vlada nabavljena je sva oprema koja je neophodna za održavanje sekcije streličarstva.'></meta>
+                <meta property='og:title' content='Nabavljena oprema za projekat Pravo u metu' />
+                <meta property='og:type' content='website' />
+                <meta property='og:description' content='Na osnovu projekta koji je finansirala Pokrajinska vlada nabavljena je sva oprema koja je neophodna za održavanje sekcije streličarstva.' />
+                <link rel='canonical' href='https://pravoumetu.rs'></link>
+            </Helmet>
             <Header />
             <div className='wrap container-section page-view news-2__container'>
                 <h1 className='heading-section news-2__heading'>Nabavljena sva neophodna oprema</h1>
@@ -59,6 +68,6 @@ export const News2 = () => {
                 </div>
             </div>
             <Footer />
-        </section>
+        </main>
     )
 }

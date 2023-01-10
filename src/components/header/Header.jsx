@@ -26,9 +26,9 @@ export const Header = () => {
     return (
         <header className='header'>
             <div className='wrap wrap--header header__container'>
-                <div className='header__left'>
-                    <img className='header__logo' src='/images/logo.png' alt='Logo' />
-                </div>
+                <picture className='header__left'>
+                    <img className='header__logo' src='/images/logo.png' alt='Pravo u metu logo' />
+                </picture>
                 <nav className={`header__center ${nav_view}`}>
                     <ul className='header__list'>
                         <li className='header__item'>
